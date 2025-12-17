@@ -8,20 +8,209 @@
 </head>
 <body>
     <div class="layout">
-        <nav class="sidebar" id="sidebar"></nav>
+        <nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="../../index.html" class="logo">
+                    <svg class="logo-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"></path><path d="M2 17l10 5 10-5"></path><path d="M2 12l10 5 10-5"></path></svg>
+                    <span>Detection Engineering</span>
+                </a>
+            </div>
+            <div class="nav-sections">
+                <div class="nav-section expanded" data-section="detection-engineering">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.35-4.35"></path></svg>
+                            <span>Detection Engineering</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/detection-engineering/fundamentals.html" class="nav-item ">Detection Fundamentals</a>
+                        <a href="../../pages/detection-engineering/sentinel-deep-dive.html" class="nav-item ">Microsoft Sentinel</a>
+                        <a href="../../pages/detection-engineering/splunk-comparison.html" class="nav-item ">Splunk Comparison</a>
+                        <a href="../../pages/detection-engineering/detection-logic.html" class="nav-item ">Detection Logic</a>
+                        <a href="../../pages/detection-engineering/mitre-mapping.html" class="nav-item ">MITRE ATT&CK Mapping</a>
+                        <a href="../../pages/detection-engineering/use-case-framework.html" class="nav-item active">Use Case Framework</a>
+                        <a href="../../pages/detection-engineering/metrics-optimization.html" class="nav-item ">Metrics & Optimization</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="log-analysis">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline></svg>
+                            <span>Log Analysis</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/log-analysis/fundamentals.html" class="nav-item ">Log Fundamentals</a>
+                        <a href="../../pages/log-analysis/network-logs.html" class="nav-item ">Network Logs</a>
+                        <a href="../../pages/log-analysis/endpoint-logs.html" class="nav-item ">Endpoint Logs</a>
+                        <a href="../../pages/log-analysis/cloud-logs.html" class="nav-item ">Cloud Logs</a>
+                        <a href="../../pages/log-analysis/identity-logs.html" class="nav-item ">Identity Logs</a>
+                        <a href="../../pages/log-analysis/data-models.html" class="nav-item ">Data Models</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="threat-intel">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path></svg>
+                            <span>Threat Intelligence</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/threat-intel/fundamentals.html" class="nav-item ">TI Fundamentals</a>
+                        <a href="../../pages/threat-intel/sources.html" class="nav-item ">Intelligence Sources</a>
+                        <a href="../../pages/threat-intel/ioc-management.html" class="nav-item ">IOC Management</a>
+                        <a href="../../pages/threat-intel/threat-hunting.html" class="nav-item ">Threat Hunting</a>
+                        <a href="../../pages/threat-intel/hunting-methodology.html" class="nav-item ">Hunting Methodology</a>
+                        <a href="../../pages/threat-intel/hunting-techniques.html" class="nav-item ">Hunting Techniques</a>
+                        <a href="../../pages/threat-intel/hunting-queries.html" class="nav-item ">Hunting Queries</a>
+                        <a href="../../pages/threat-intel/mitre-framework.html" class="nav-item ">MITRE Deep Dive</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="sap-security">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            <span>SAP Security</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/sap-security/sap-overview.html" class="nav-item ">SAP Overview</a>
+                        <a href="../../pages/sap-security/architecture.html" class="nav-item ">Architecture</a>
+                        <a href="../../pages/sap-security/modules-services.html" class="nav-item ">Modules & Services</a>
+                        <a href="../../pages/sap-security/security-fundamentals.html" class="nav-item ">Security Fundamentals</a>
+                        <a href="../../pages/sap-security/log-types.html" class="nav-item ">Log Types</a>
+                        <a href="../../pages/sap-security/threat-detection.html" class="nav-item ">Threat Detection</a>
+                        <a href="../../pages/sap-security/siem-integration.html" class="nav-item ">SIEM Integration</a>
+                        <a href="../../pages/sap-security/compliance.html" class="nav-item ">Compliance</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="vulnerability-mgmt">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"></path><line x1="12" y1="9" x2="12" y2="13"></line><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+                            <span>Vulnerability Management</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/vulnerability-mgmt/fundamentals.html" class="nav-item ">VM Fundamentals</a>
+                        <a href="../../pages/vulnerability-mgmt/scanning.html" class="nav-item ">Scanning</a>
+                        <a href="../../pages/vulnerability-mgmt/qualys-deep-dive.html" class="nav-item ">Qualys Deep Dive</a>
+                        <a href="../../pages/vulnerability-mgmt/tenable.html" class="nav-item ">Tenable/Nessus</a>
+                        <a href="../../pages/vulnerability-mgmt/prioritization.html" class="nav-item ">Prioritization</a>
+                        <a href="../../pages/vulnerability-mgmt/remediation.html" class="nav-item ">Remediation</a>
+                        <a href="../../pages/vulnerability-mgmt/metrics.html" class="nav-item ">VM Metrics</a>
+                        <a href="../../pages/vulnerability-mgmt/automation.html" class="nav-item ">VM Automation</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="cloud-security">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            <span>Cloud Security</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/cloud-security/fundamentals.html" class="nav-item ">Cloud Fundamentals</a>
+                        <a href="../../pages/cloud-security/aws-security.html" class="nav-item ">AWS Security</a>
+                        <a href="../../pages/cloud-security/azure-security.html" class="nav-item ">Azure Security</a>
+                        <a href="../../pages/cloud-security/gcp-security.html" class="nav-item ">GCP Security</a>
+                        <a href="../../pages/cloud-security/multi-cloud.html" class="nav-item ">Multi-Cloud</a>
+                        <a href="../../pages/cloud-security/cspm.html" class="nav-item ">CSPM & CWPP</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="automation">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            <span>Automation</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/automation/fundamentals.html" class="nav-item ">Automation Fundamentals</a>
+                        <a href="../../pages/automation/python-security.html" class="nav-item ">Python for Security</a>
+                        <a href="../../pages/automation/powershell-security.html" class="nav-item ">PowerShell</a>
+                        <a href="../../pages/automation/bash-security.html" class="nav-item ">Bash Scripting</a>
+                        <a href="../../pages/automation/soar.html" class="nav-item ">SOAR Platforms</a>
+                        <a href="../../pages/automation/api-integration.html" class="nav-item ">API Integration</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="compliance">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>
+                            <span>Compliance</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/compliance/framework-overview.html" class="nav-item ">Framework Overview</a>
+                        <a href="../../pages/compliance/iso-27001.html" class="nav-item ">ISO 27001</a>
+                        <a href="../../pages/compliance/nist-csf.html" class="nav-item ">NIST CSF</a>
+                        <a href="../../pages/compliance/nist-800-53.html" class="nav-item ">NIST 800-53</a>
+                        <a href="../../pages/compliance/gdpr.html" class="nav-item ">GDPR</a>
+                        <a href="../../pages/compliance/other-frameworks.html" class="nav-item ">Other Frameworks</a>
+                        <a href="../../pages/compliance/documentation.html" class="nav-item ">Documentation</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="incident-response">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"></polygon></svg>
+                            <span>Incident Response</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/incident-response/soc-collaboration.html" class="nav-item ">SOC Collaboration</a>
+                        <a href="../../pages/incident-response/ir-support.html" class="nav-item ">IR Support</a>
+                        <a href="../../pages/incident-response/forensics.html" class="nav-item ">Forensics</a>
+                        <a href="../../pages/incident-response/communication.html" class="nav-item ">Communication</a>
+                    </div>
+                </div>
+                <div class="nav-section " data-section="references">
+                    <div class="nav-section-header">
+                        <div class="nav-section-title">
+                            <svg class="nav-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                            <span>Quick Reference</span>
+                        </div>
+                        <svg class="nav-arrow" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                    </div>
+                    <div class="nav-items">
+                        <a href="../../pages/references/kql-cheatsheet.html" class="nav-item ">KQL Cheatsheet</a>
+                        <a href="../../pages/references/spl-cheatsheet.html" class="nav-item ">SPL Cheatsheet</a>
+                        <a href="../../pages/references/regex-mastery.html" class="nav-item ">Regex Reference</a>
+                        <a href="../../pages/references/windows-events.html" class="nav-item ">Windows Events</a>
+                        <a href="../../pages/references/mitre-quick-ref.html" class="nav-item ">MITRE Quick Ref</a>
+                        <a href="../../pages/references/interview-prep.html" class="nav-item ">Interview Prep</a>
+                        <a href="../../pages/references/interview-answers.html" class="nav-item ">My Interview Answers</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
         <main class="main-content">
             <div class="content">
-            <div class="breadcrumb">
-                <a href="../../index.html">Home</a> <span>/</span>
-                <a href="fundamentals.html">Detection Engineering</a> <span>/</span>
-                <span>Use Case Framework</span>
-            </div>
+                <nav class="breadcrumb">
+                    <a href="../../index.html">Home</a>
+                    <span class="separator">/</span>
+                    <a href="use-case-framework.html">Detection Engineering</a>
+                    <span class="separator">/</span>
+                    <span class="current">Use Case Framework</span>
+                </nav>
 
-            <article class="content">
-                <h1>Use Case Framework</h1>
-                <p class="subtitle">Structured methodology for developing, documenting, and managing detection use cases from ideation to production</p>
+                <header class="page-header">
+                    <h1>Use Case Framework</h1>
+                    <p class="subtitle">Structured methodology for developing, documenting, and managing detection use cases from ideation to production</p>
+                </header>
 
-                <!-- Use Case Lifecycle -->
                 <section class="content-section">
                     <h2>Detection Use Case Lifecycle</h2>
                     <p>A systematic approach to building detection capabilities that align with organizational risk, threat landscape, and operational maturity.</p>
@@ -59,7 +248,6 @@
                     </div>
                 </section>
 
-                <!-- Use Case Template -->
                 <section class="content-section">
                     <h2>Use Case Documentation Template</h2>
                     <p>Standardized documentation ensures consistency, enables knowledge transfer, and supports audit requirements.</p>
@@ -404,7 +592,6 @@ change_history:
                     </div>
                 </section>
 
-                <!-- Requirements Gathering -->
                 <section class="content-section">
                     <h2>Requirements Gathering Framework</h2>
                     <p>Systematic approach to identifying detection requirements from multiple inputs.</p>
@@ -493,7 +680,6 @@ UseCaseRequirements
                     </div>
                 </section>
 
-                <!-- Use Case Categories -->
                 <section class="content-section">
                     <h2>Use Case Categories</h2>
                     <p>Organize detection use cases into logical categories for coverage tracking and gap analysis.</p>
@@ -556,7 +742,6 @@ UseCaseRequirements
                     </div>
                 </section>
 
-                <!-- Use Case Library Management -->
                 <section class="content-section">
                     <h2>Use Case Library Management</h2>
                     <p>Maintain a structured repository of detection use cases with version control and metadata tracking.</p>
@@ -628,7 +813,6 @@ UseCaseLibrary
                     </div>
                 </section>
 
-                <!-- Maturity Assessment -->
                 <section class="content-section">
                     <h2>Detection Maturity Assessment</h2>
                     <p>Evaluate and improve detection capabilities using a structured maturity model.</p>
@@ -752,7 +936,6 @@ MaturityAssessment
                     </div>
                 </section>
 
-                <!-- Detection as Code -->
                 <section class="content-section">
                     <h2>Detection as Code (DaC)</h2>
                     <p>Apply software engineering practices to detection development for consistency, versioning, and automation.</p>
@@ -876,7 +1059,6 @@ jobs:
                     </div>
                 </section>
 
-                <!-- Interview Q&A -->
                 <section class="content-section">
                     <h2>Interview Questions & Answers</h2>
                     
@@ -961,152 +1143,10 @@ jobs:
                     </div>
                 </section>
 
-                <!-- Navigation -->
-                <div class="page-navigation">
-                    <a href="mitre-mapping.html" class="nav-link prev">
-                        <span class="arrow">←</span>
-                        <span class="label">Previous: MITRE ATT&CK Mapping</span>
-                    </a>
-                    <a href="metrics-optimization.html" class="nav-link next">
-                        <span class="label">Next: Metrics & Optimization</span>
-                        <span class="arrow">→</span>
-                    </a>
-                </div>
-            </article>
-                    </div>
+                
+            </div>
         </main>
     </div>
-
     <script src="../../js/sidebar.js"></script>
-    <script>
-        function copyCode(button) {
-            const codeBlock = button.closest('.code-block').querySelector('code');
-            navigator.clipboard.writeText(codeBlock.textContent);
-            button.textContent = 'Copied!';
-            setTimeout(() => button.textContent = 'Copy', 2000);
-        }
-    </script>
-
-    <style>
-        /* Lifecycle Flow */
-        .lifecycle-flow {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            flex-wrap: wrap;
-            gap: 1rem;
-            margin: 2rem 0;
-            padding: 1.5rem;
-            background: linear-gradient(135deg, rgba(0, 212, 255, 0.05) 0%, rgba(0, 255, 136, 0.05) 100%);
-            border-radius: 12px;
-            border: 1px solid rgba(0, 212, 255, 0.2);
-        }
-
-        .lifecycle-stage {
-            flex: 1;
-            min-width: 120px;
-            text-align: center;
-            padding: 1rem;
-            background: rgba(10, 14, 20, 0.8);
-            border-radius: 8px;
-            border: 1px solid rgba(0, 212, 255, 0.3);
-        }
-
-        .stage-number {
-            width: 32px;
-            height: 32px;
-            background: linear-gradient(135deg, #00d4ff, #00ff88);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: 700;
-            color: #0a0e14;
-            margin: 0 auto 0.75rem;
-        }
-
-        .lifecycle-stage h4 {
-            color: #00d4ff;
-            margin: 0 0 0.5rem 0;
-            font-size: 0.95rem;
-        }
-
-        .lifecycle-stage p {
-            margin: 0;
-            font-size: 0.8rem;
-            color: #8b949e;
-        }
-
-        .lifecycle-arrow {
-            color: #00ff88;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
-
-        @media (max-width: 768px) {
-            .lifecycle-arrow {
-                transform: rotate(90deg);
-                width: 100%;
-                text-align: center;
-            }
-        }
-
-        /* Maturity Levels */
-        .maturity-levels {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 1rem;
-            margin: 1.5rem 0;
-        }
-
-        .maturity-level {
-            background: rgba(10, 14, 20, 0.8);
-            border-radius: 8px;
-            padding: 1.25rem;
-            border-left: 4px solid;
-        }
-
-        .level-1 { border-color: #ef4444; }
-        .level-2 { border-color: #f97316; }
-        .level-3 { border-color: #eab308; }
-        .level-4 { border-color: #22c55e; }
-        .level-5 { border-color: #00d4ff; }
-
-        .level-header {
-            display: flex;
-            align-items: center;
-            gap: 0.75rem;
-            margin-bottom: 1rem;
-        }
-
-        .level-badge {
-            padding: 0.25rem 0.5rem;
-            border-radius: 4px;
-            font-size: 0.75rem;
-            font-weight: 600;
-        }
-
-        .level-1 .level-badge { background: rgba(239, 68, 68, 0.2); color: #ef4444; }
-        .level-2 .level-badge { background: rgba(249, 115, 22, 0.2); color: #f97316; }
-        .level-3 .level-badge { background: rgba(234, 179, 8, 0.2); color: #eab308; }
-        .level-4 .level-badge { background: rgba(34, 197, 94, 0.2); color: #22c55e; }
-        .level-5 .level-badge { background: rgba(0, 212, 255, 0.2); color: #00d4ff; }
-
-        .level-header h4 {
-            margin: 0;
-            color: #e6edf3;
-        }
-
-        .maturity-level ul {
-            margin: 0;
-            padding-left: 1.25rem;
-        }
-
-        .maturity-level li {
-            font-size: 0.85rem;
-            margin-bottom: 0.4rem;
-            color: #8b949e;
-        }
-    </style>
 </body>
 </html>
