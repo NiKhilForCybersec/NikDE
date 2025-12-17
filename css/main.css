@@ -236,7 +236,27 @@ aside.sidebar ~ main {
 .sidebar-nav, .nav-sections {
     flex: 1;
     overflow-y: auto;
+    overflow-x: hidden;
     padding: 0.5rem 0;
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-color) transparent;
+}
+
+.nav-sections::-webkit-scrollbar {
+    width: 6px;
+}
+
+.nav-sections::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+.nav-sections::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 3px;
+}
+
+.nav-sections::-webkit-scrollbar-thumb:hover {
+    background: var(--text-muted);
 }
 
 .nav-section {
