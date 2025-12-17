@@ -130,7 +130,7 @@ code {
    SIDEBAR
    ============================================ */
 
-.sidebar {
+.sidebar, aside.sidebar {
     width: var(--sidebar-width);
     height: 100vh;
     position: fixed;
@@ -144,9 +144,35 @@ code {
     overflow: hidden;
 }
 
+/* Ensure body has proper layout when sidebar exists */
+body:has(.sidebar), body:has(aside.sidebar) {
+    display: flex;
+}
+
+/* Handle aside sidebar without layout wrapper */
+aside.sidebar + main,
+aside.sidebar ~ main {
+    margin-left: var(--sidebar-width);
+    flex: 1;
+}
+
 .sidebar-header {
     padding: 1.25rem 1rem;
     border-bottom: 1px solid var(--border-color);
+}
+
+/* Handle h2 based headers in some pages */
+.sidebar-header h2 {
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: 0;
+}
+
+.sidebar-header .sidebar-subtitle {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    margin-top: 0.25rem;
 }
 
 .logo, .sidebar-logo {
@@ -241,6 +267,18 @@ code {
     font-weight: 500;
 }
 
+/* Support for text-based nav toggle (▼) */
+.nav-section-title .nav-toggle {
+    font-size: 0.7rem;
+    transition: transform var(--transition-fast);
+    margin-left: auto;
+    opacity: 0.5;
+}
+
+.nav-section.expanded .nav-section-title .nav-toggle {
+    transform: rotate(180deg);
+}
+
 .nav-icon {
     width: 18px;
     height: 18px;
@@ -263,8 +301,40 @@ code {
     padding: 0.25rem 0;
 }
 
-.nav-section.expanded .nav-items {
+.nav-section.expanded .nav-items,
+.nav-items:not([style*="display: none"]) {
     display: block;
+}
+
+/* Support ul-based nav items */
+ul.nav-items {
+    list-style: none;
+    margin: 0;
+}
+
+ul.nav-items li {
+    margin: 0;
+}
+
+ul.nav-items li a {
+    display: block;
+    padding: 0.5rem 1rem 0.5rem 2.75rem;
+    color: var(--text-muted);
+    font-size: 0.85rem;
+    text-decoration: none;
+    transition: all var(--transition-fast);
+    border-left: 2px solid transparent;
+}
+
+ul.nav-items li a:hover {
+    background: var(--bg-hover);
+    color: var(--text-primary);
+}
+
+ul.nav-items li a.active {
+    background: rgba(96, 165, 250, 0.1);
+    color: var(--accent-primary);
+    border-left-color: var(--accent-primary);
 }
 
 .nav-item {
@@ -340,10 +410,46 @@ code {
     min-height: 100vh;
 }
 
+/* Handle pages without content wrapper */
+.main-content > .content-header:first-child,
+.main-content > header.page-header:first-child,
+.main-content > .breadcrumb:first-child {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.main-content > section,
+.main-content > .doc-section {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
 .content {
     max-width: 900px;
     margin: 0 auto;
     padding: 2rem 2.5rem;
+}
+
+/* For pages that don't have content wrapper, center everything */
+main.main-content {
+    padding: 0;
+}
+
+main.main-content:not(:has(.content)) {
+    padding: 2rem 2.5rem;
+    max-width: calc(900px + var(--sidebar-width));
+}
+
+main.main-content:not(:has(.content)) > * {
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* Top Bar (alternate layout) */
@@ -351,9 +457,14 @@ code {
     display: flex;
     align-items: center;
     gap: 1rem;
-    padding: 1rem 1.5rem;
+    padding: 1rem 2.5rem;
     background: var(--bg-secondary);
     border-bottom: 1px solid var(--border-color);
+    max-width: none;
+}
+
+.top-bar .breadcrumb, .top-header .breadcrumb {
+    margin-bottom: 0;
 }
 
 .menu-toggle {
@@ -363,6 +474,7 @@ code {
     color: var(--text-primary);
     font-size: 1.25rem;
     cursor: pointer;
+    padding: 0.5rem;
 }
 
 /* Breadcrumb */
@@ -418,6 +530,12 @@ code {
     padding-bottom: 0.5rem;
     border-bottom: 1px solid var(--border-subtle);
     margin-bottom: 1.25rem;
+    margin-top: 0;
+}
+
+.content-section h3, .doc-section h3 {
+    margin-top: 1.5rem;
+    margin-bottom: 0.75rem;
 }
 
 /* ============================================
@@ -813,16 +931,21 @@ hr {
    ============================================ */
 
 @media (max-width: 1024px) {
-    .sidebar {
+    .sidebar, aside.sidebar {
         transform: translateX(-100%);
         transition: transform var(--transition-normal);
     }
     
-    .sidebar.mobile-open {
+    .sidebar.mobile-open, aside.sidebar.mobile-open {
         transform: translateX(0);
     }
     
     .main-content, .main-wrapper {
+        margin-left: 0;
+    }
+    
+    aside.sidebar + main,
+    aside.sidebar ~ main {
         margin-left: 0;
     }
     
@@ -832,6 +955,12 @@ hr {
     
     .menu-toggle {
         display: block;
+    }
+    
+    .main-content > section,
+    .main-content > .doc-section {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
     }
 }
 
